@@ -10,12 +10,12 @@ As I am an aspiring professional data analyst, this was completed with the inten
 
 
 CREDITS
-Thanks to Alex Freberg, who has created an excellent series of videos demonstrating full, professional data analysis projects for those of us who have the skills, but not the experience. This project was [rather loosely] based on one of his tutorials.
+Thanks to Alex Freberg, who has created an excellent series of videos demonstrating full, professional data analysis projects for those of us who have the skills, but not the experience. This project was rather loosely based on one of his tutorials.
 
 Thanks to Our World In Data, who provide comprehensive and up-to-date pandemic data to the public, and all the entities from whom they themselves gather and compile the data.
 
 
 NOTE
-I had intended to upload the exact files I used, but they exceed the upload size limit; if you would like to run these queries, you can download and format up-to-date data according to the links and steps taken in Alex Freberg's video at https://youtu.be/qfyynHBFOsM. [A significant portion of OWID's data set comes from Johns Hopkins University, who will stop reporting later this week; query compatibility with later data sets is not guaranteed.]
+If you would like to run these queries, I've included the data I used to create the tables [edited to satisfy upload file size limits]. Alternatively, you can download and format up-to-date data according to the links and steps taken in Alex Freberg's video at https://youtu.be/qfyynHBFOsM. [A significant portion of OWID's data set comes from Johns Hopkins University, who will stop reporting later this week; query compatibility with later data sets is not guaranteed.]
 
 Import the tables as 'mortality' and 'vaccinations' to use with the queries as they are.
