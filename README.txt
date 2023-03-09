@@ -10,7 +10,7 @@ As I am an aspiring professional data analyst, this was completed with the inten
 
 
 CREDITS
-Thanks to Alex Freberg, who has created an excellent series of videos demonstrating full, professional data analysis projects for those of us who have the skills, but not the experience. This project was rather loosely based on one of his tutorials.
+Thanks to Alex Freberg, who has created an excellent series of videos demonstrating full, professional data analysis projects for those of us who have the skills, but not the experience. Though the queries are my own, this project began with a data set and formatting suggested by him.
 
 Thanks to Our World In Data, who provide comprehensive and up-to-date pandemic data to the public, and all the entities from whom they themselves gather and compile the data.
 
