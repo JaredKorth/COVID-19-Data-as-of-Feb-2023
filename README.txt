@@ -16,7 +16,7 @@ Thanks to Our World In Data, who provide comprehensive and up-to-date pandemic d
 
 
 NOTE
-If you would like to run these queries, I've included the data I used to create the tables [edited to satisfy upload file size limits]. Alternatively, you can download and format up-to-date data according to the links and steps taken in Alex Freberg's video at https://youtu.be/qfyynHBFOsM. [A significant portion of OWID's data set comes from Johns Hopkins University, who will stop reporting later this week; query compatibility with later data sets is not guaranteed.]
+If you would like to run these queries, I've included the data I used to create the tables [edited to satisfy upload file size limits]. Alternatively, you can download and format up-to-date data according to the links and steps taken in Alex Freberg's video at https://youtu.be/qfyynHBFOsM. [A significant portion of OWID's data set comes from Johns Hopkins University, who will stop reporting later this week; query compatibility with later data sets is uncertain.]
 Import the tables as 'mortality' and 'vaccinations' to use with the queries as they are.
 
 You can find a companion visualization at https://public.tableau.com/app/profile/jared.korth/viz/PandemicNumbersasofFebruary2023/COVIDDashboard
