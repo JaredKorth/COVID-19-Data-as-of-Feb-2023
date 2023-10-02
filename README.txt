@@ -2,7 +2,7 @@ COVID-19 Data Analysis in SQL
 by Jared Korth
 
 DESCRIPTION
-A series of queries written in Microsoft SQL Server 2022 [using SQL Server Management Studio 19], exploring global data related to the COVID-19 pandemic. The data was pulled in February 2023, just before Johns Hopkins University (a major compiler of COVID-19 statistics in the United States) ended their daily reporting.
+A series of queries written in Microsoft SQL Server 2022 [using SQL Server Management Studio 19], exploring global data related to the COVID-19 pandemic. The data was pulled in February 2023, just before Johns Hopkins University (a major compiler of COVID-19 statistics) ended their daily reporting.
 
 
 CREDITS
