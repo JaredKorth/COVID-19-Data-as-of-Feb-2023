@@ -7,6 +7,7 @@ A series of queries written in Microsoft SQL Server 2022 [using SQL Server Manag
 
 CREDITS
 Thanks to Our World In Data, who provide comprehensive and up-to-date pandemic data to the public, and all the entities from whom they themselves gather and compile the data.
+https://ourworldindata.org/coronavirus-data-explorer
 
 
 NOTES
