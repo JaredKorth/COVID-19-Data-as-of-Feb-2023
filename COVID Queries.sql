@@ -1,9 +1,7 @@
---Access appropriate database
 USE CovidData;
 
 
 --Initial look at some of the data
----Select, From, and Order by clauses
 SELECT location, date, new_cases, total_cases, total_deaths, population
 FROM mortality
 ORDER BY location, date;
@@ -14,7 +12,6 @@ ORDER BY location, date;
 
 
 --Up-to-date case and death numbers by geographic location
----Aggregate functions, Where, Like, and Group by clauses
 SELECT location, MAX(total_cases) AS cases, MAX(total_deaths) AS deaths
 FROM mortality
 WHERE total_deaths IS NOT NULL
@@ -24,7 +21,6 @@ ORDER BY deaths DESC;
 
 
 --Deaths/Population by country
----Casting, Aliases, Telling a story with data
 SELECT continent,
 	location,
 	population,
@@ -37,7 +33,6 @@ ORDER BY '% population removed by COVID' DESC;
 
 
 --Impact of income brackets on infection and mortality rates
----Concatenation, Order by Case clause
 SELECT location AS income_bracket,
 	population,
 	MAX(total_cases) as cases,
@@ -59,7 +54,6 @@ ORDER BY CASE location
 
 
 --Data integrity: Comparing total_vaccinations column to calculated total vaccinations
----Common Table Expression, Window function for rolling sum
 WITH calculated_vaccs AS 
 (
 	SELECT location,
@@ -79,7 +73,6 @@ ORDER BY location, date;
 
 
 --Data Integrity: Comparing total_tests column to calculated total tests
----Temp Table
 DROP TABLE IF EXISTS #calculated_tests
 CREATE TABLE #calculated_tests
 (
@@ -159,7 +152,6 @@ ORDER BY continent, location;
 
 
 --Strictness of government response vs transmission
----Rounding to match level of precision in columns, removing trailing zeros
 SELECT v.stringency_index AS strictness, 
 	CAST(ROUND(AVG(m.new_cases_per_million),2) AS float) AS new_cases_per_million
 FROM mortality m
@@ -173,7 +165,6 @@ ORDER BY v.stringency_index DESC;
 
 
 --How did Sweden's more relaxed approach affect infection rate?
----solved using Subqueries, Union with totals
 SELECT DISTINCT 'new' as cases,
 	m.date,
 	(
@@ -203,7 +194,6 @@ ORDER BY cases, date;
 
 
 --How did China's more strict approach affect infection rates?
----solved using Joins
 SELECT DISTINCT 'new' AS cases,
 	c.date, 
 	c.new_cases_per_million AS 'chinese cases per million',
@@ -284,9 +274,8 @@ ON frp.date = v.date AND frp.location = v.location
 ORDER BY excess_lives DESC
 
 
-
 --Deadliest day of the pandemic
----Select TOP clause, Excluding recent data where this statistic was sometimes aggregated
+--Excluding recent data where this statistic was sometimes aggregated
 SELECT TOP 1
 	location,
 	date,
